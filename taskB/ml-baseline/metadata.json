@@ -1,0 +1,4 @@
+{
+    "image": "sberbank/sdsj-python",
+    "entry_point": "python predict.py"
+}
