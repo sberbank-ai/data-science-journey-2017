@@ -19,3 +19,10 @@
 ```bash
 pip install -r requirements.txt
 ```
+
+Запуск решения:
+```bash
+python3 solution.py
+```
+
+В результате получаем файл с предсказаниями [`sample_predictions.csv`](sample_predictions.csv), который можно отправить в [проверяющую систему](https://contest.sdsj.ru/).
