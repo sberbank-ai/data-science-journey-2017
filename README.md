@@ -1,6 +1,18 @@
-Данные репозиторий содержит примеры решений задач проводимых в рамках конкурса [SDSJ](https://sdsj.ru/), а также вспомогательные файлы позволяющие упростить решение и его отладку перед отправкой на [платформу](https://contest.sdsj.ru).
+# Sberbank Data Science Journey 2017
 
-Струтура репозитория:
+SDSJ is an international competition on machine learning, data science and AI. This year we prepared 2 problems: question relevance classification (Problem A) and building a question answering system (Problem B). This repository contains supplementary materials with baseline solutions and submission guidelines.
 
-1. [Бейзлайн для задачи А](taskA/)
-2. [Бейзлайн для задачи B](taskB/)
+**[Competition Web Site](https://sdsj.ru/en/)**
+
+**[Submission Platform](https://contest.sdsj.ru/)**
+
+## Problem A: classify relevant questions
+
+- [Baseline solution](problem_A/)
+
+## Problem B: question answering system
+
+- [Guidelines](master/problem_B)
+- [Simple baseline solution](problem_B/simple-baseline)
+- [Solution with machine learning model](problem_B/ml-baseline)
+
