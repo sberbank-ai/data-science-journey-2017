@@ -1,0 +1,1 @@
+python3 train.py --train-file train_task_b_drqa.json --dev-file val_task_b_drqa.json --embedding-file ruwiki_300.txt --use-ner False --use-pos False --use-lemma True --official-eval False --batch-size 60 --expand-dictionary False --uncased-doc True --uncased-question True --restrict-vocab True --valid-metric exact_match

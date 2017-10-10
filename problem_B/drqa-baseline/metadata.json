@@ -1,0 +1,4 @@
+{
+  "image": "sberbank/sdsj-python",
+  "entry_point": "python3 scripts/reader/test.py --model models/epoch_29_exact_52.mdl"
+}
