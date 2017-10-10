@@ -7,6 +7,7 @@
 
 - [`simple-baseline`](simple-baseline/): решение на основе простой эвристики
 - [`ml-baseline`](ml-baseline/): решение с использованием машинного обучения
+- [`drqa-baseline`](drqa-baseline/): решение на основе deep learning модели из [DrQA Reader](https://github.com/facebookresearch/DrQA) (от Facebook AI Research)
 
 
 ## Описание формата решения
