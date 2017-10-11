@@ -1,1 +1,1 @@
-zip -r submit.zip metadata.json drqa models/epoch_29_exact_52.mdl scripts
+zip -r submit.zip metadata.json drqa models/20171011-95dbf0c5.mdl scripts

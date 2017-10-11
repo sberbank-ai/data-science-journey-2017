@@ -61,6 +61,7 @@ class Predictor(object):
         self.model = DocReader.load(model or DEFAULTS['model'],
                                     normalize=normalize)
 
+        print(self.model.args)
         if embedding_file:
             logger.info('Expanding dictionary...')
             words = utils.index_embedding_words(embedding_file)
@@ -75,7 +76,7 @@ class Predictor(object):
        #     tokenizer_class = DEFAULTS['tokenizer']
        # else:
        #     tokenizer_class = tokenizers.get_class(tokenizer)
-
+        annotators.update({'lemma'})
         if num_workers is None or num_workers > 0:
             self.workers = ProcessPool(
                 num_workers,

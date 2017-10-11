@@ -34,7 +34,7 @@ class SimpleTokenizer(Tokenizer):
             logger.warning('%s only tokenizes! Skipping annotators: %s' %
                            (type(self).__name__, kwargs.get('annotators')))
         self.annotators = annotators
-        if 'lemma' in self.annotators:
+        if 'lemma' in self.annotators or 'pos' in self.annotators:
             self.ma = pymorphy2.MorphAnalyzer()
         else:
             self.ma = None
@@ -46,9 +46,12 @@ class SimpleTokenizer(Tokenizer):
             # Get text
             token = matches[i].group()
             if self.ma is not None:
-                lemma = self.ma.parse(token)[0].normal_form
+                parsed = self.ma.parse(token)[0]
+                lemma = parsed.normal_form
+                pos = str(parsed.tag.POS) if parsed.tag is not None and parsed.tag.POS is not None else ""
             else:
                 lemma = None
+                pos = None
             # Get whitespace
             span = matches[i].span()
             start_ws = span[0]
@@ -62,7 +65,7 @@ class SimpleTokenizer(Tokenizer):
                 token,
                 text[start_ws: end_ws],
                 span,
-                None,
+                pos,
                 lemma,
                 None,
             ))
