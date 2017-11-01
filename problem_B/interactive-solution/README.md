@@ -11,8 +11,8 @@
 
 ```json
 {
-	"image": "sberbank/sdsj-python",
-	"entry_point": "python predict_server.py"
+    "image": "sberbank/sdsj-python",
+    "entry_point": "python predict_server.py"
 }
 ```
 
@@ -21,10 +21,10 @@
 Запустите контейнер с решением, прокинув порт 8000 из контейнера:
 ```bash
 $ docker run \
-	-p 8000:8000 \
-	-v `pwd`:/workspace \
-	-w /workspace \
-	python prediction_server.py
+    -p 8000:8000 \
+    -v `pwd`:/workspace \
+    -w /workspace \
+    python prediction_server.py
 ```
 
 Запустите скрипт `test_requests.py`, который сделает несколько тестовых запросов к решению:
@@ -43,14 +43,14 @@ $ python test_requests.py http://localhost:8000
 Основной запрос `POST /predict` содержит в теле JSON c параграфом и вопросом:
 ```json
 {
-	"paragraph": "Голоцен (начался 11,7 тыс. лет назад и продолжается до сих пор) — типичная межледниковая...",
-	"question": "Какие виды животных перестали существовать за последние несколько сотен лет?"
+    "paragraph": "Голоцен (начался 11,7 тыс. лет назад и продолжается до сих пор) — типичная межледниковая...",
+    "question": "Какие виды животных перестали существовать за последние несколько сотен лет?"
 }
 ```
 На него необходимо дать ответ с вида:
 ```json
 {
-	"answer": "дронты, эпиорнис"
+    "answer": "дронты, эпиорнис"
 }
 ```
 имеющий в заголовке `Content-Type: application/json`.
