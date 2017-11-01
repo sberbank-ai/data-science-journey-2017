@@ -6,13 +6,13 @@
 ### Добавление интерфейса в Python-решение
 
 1. Установите в ваш image python-пакет `flask`, в `sberbank/sdsj-python` он уже установлен.
-2. Добавьте [`predict_server.py`](predict_server.py), заполните содержимое функции `make_answer(paragraph, question)`.
+2. Добавьте [`prediction_server.py`](prediction_server.py), заполните содержимое функции `make_answer(paragraph, question)`.
 3. Поменяйте в `metadata.json` поле `entry_point` таким образом, чтобы по запуску контейнера запускался сервер на порту 8000.
 
 ```json
 {
     "image": "sberbank/sdsj-python",
-    "entry_point": "python predict_server.py"
+    "entry_point": "python prediction_server.py"
 }
 ```
 
