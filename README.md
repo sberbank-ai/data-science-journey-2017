@@ -6,6 +6,9 @@ SDSJ is an international competition on machine learning, data science and AI. T
 
 **[Submission Platform](https://contest.sdsj.ru/)**
 
+**[Dataset: `sdsj2017_sberquad.csv`](https://s3.eu-central-1.amazonaws.com/datasouls/public/sdsj2017_sberquad.csv
+)**
+
 ## Problem A: classify relevant questions
 
 - [Baseline solution](problem_A/)
