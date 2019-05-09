@@ -3,7 +3,7 @@
 1. Скачайте файл с векторным представлением слов, готовые модели вы можете найти на сайте http://rusvectores.org/ru/models/ или выполните `scripts/reader/download_w2v.sh`
 
 2. Трансформируйте файл с представлениями слов в текстовый формат: для этого выполните все ячейке в ноутбуке
-   [scripts/reader/BinaryW2VToSpaceSepartor.ipynb](`scripts/reader/BinaryW2VToSpaceSepartor.ipynb`)
+   [scripts/reader/BinaryW2VToSpaceSepartor.ipynb](scripts/reader/BinaryW2VToSpaceSepartor.ipynb)
 
 3. Конвертируйте данные в формат, подходящий для обучения: `PYTHONPATH=.:$PYTHONPATH python3 scripts/reader/preprocess.py --tokenizer SimpleTokenizer train.csv data/datasets/output_filename.json`
 
